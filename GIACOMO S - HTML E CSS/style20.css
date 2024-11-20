@@ -1,5 +1,6 @@
-* {
+:root {
     font-family: sans-serif;
+    --main-color: bisque;
 }
 
 .cartoni {
@@ -40,4 +41,15 @@ h1 {
 img {
     width: 35%;
     margin: 10px;
+}
+
+.cat p{
+    font-size: x-large;
+    background-color: var(--main-color);
+    display: inline;
+}
+
+div th:hover {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chocolate;
 }
