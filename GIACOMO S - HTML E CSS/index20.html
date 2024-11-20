@@ -6,6 +6,9 @@
     <meta name="description" content="Primo esercizio">
     <link rel="stylesheet" href="style20.css">
     <style>
+        html {
+            margin: 40px auto;
+        }
         .scatola h1 {
             background-color: rgb(89, 149, 226);
             color: rgb(158, 137, 15);
@@ -25,72 +28,90 @@
     </div>
 
     <div>
-        <h1 class="tabtitle" style="margin-top: 40px;">Tabella per CSS</h1>
-        <table class="cartoni">
+        <h1 class="tabtitle" style="margin-top: 40px;"> Libri e fumetti preferiti </h1>
+        <table class="book">
             <thead>
                 <tr>
-                    <th>Personaggoio</th>
-                    <th>Colore</th>
-                    <th>Preferito</th>
+                    <th>Libro</th>
+                    <th>Autore</th>
+                    <th>Genere</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Paperino</td>
-                    <td> Blu </td>
-                    <td> Si </td>
+                    <td><a href="https://it.wikipedia.org/wiki/Sandman">Sandman</a></td>
+                    <td><a href="https://it.wikipedia.org/wiki/Neil_Gaiman">Neil Gaiman </a></td>
+                    <td> Fantasy / Introspettivo </td>
                 </tr>
                 <tr>
-                    <td>Pippo</td>
-                    <td>Arancione</td>
-                    <td>No</td>
+                    <td><a href="https://it.wikipedia.org/wiki/Crisi_d%27identit%C3%A0_(DC_Comics)"> Identity Crisis</a>
+                    </td>
+                    <td>Brad Meltzer</td>
+                    <td>Supereroi</td>
                 </tr>
                 <tr>
-                    <td>Topolino</td>
-                    <td>Nero</td>
-                    <td>No</td>
+                    <td><a href="https://it.wikipedia.org/wiki/Il_mondo_nuovo">Il mondo nuovo </a></td>
+                    <td><a href="https://it.wikipedia.org/wiki/Aldous_Huxley">Aldous Huxley</a></td>
+                    <td> Distopico</td>
                 </tr>
-
-
             </tbody>
         </table>
     </div>
 
     <div .scatola>
-        <h1> I miei articoli di giornale</h1>
-        <section class="scienze">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nemo corrupti nulla reprehenderit
-                consequuntur, consequatur porro sunt quibusdam ab ea dolores odit, rem tenetur ad est inventore facilis.
-                Amet, vitae!
+        <h1> Commento i miei libri </h1>
+        <section class="fumetti">
+            <h3>Sandman</h3>
+            <p> Oggi leggiamo e studiamo la Divina Commedia, tra 700 anni leggeremo e studieremo Sandman
             </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat tempora assumenda cumque laboriosam
-                aut officia facilis, veritatis quia eum? Eum eveniet ut earum accusantium suscipit incidunt consequuntur
-                quisquam quod placeat?
+            <h3>Identity Crisis</h3>
+            <p> I membri della Justice League come non li avete mai visti.
             </p>
+
         </section>
         <hr>
-        <section class="cronaca">
-            <p id="Article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae maiores odio dolores
-                dolore fugiat
-                voluptates omnis rem deserunt dolorum, labore ipsum explicabo! Optio fugiat natus adipisci
-                exercitationem sed consectetur perspiciatis.
-                Dolores tempore, iusto illo, fugit eaque soluta aspernatur quas sunt impedit eius, minus consectetur
-                veniam necessitatibus voluptates laborum voluptate cupiditate aperiam laudantium! Corporis voluptates
-                eius tenetur nihil iure explicabo quia.</p>
+        <section class="libri">
+            <h3> Il mondo nuovo</h3>
+            <p id="Article">Il romanzo distopico per eccellenza.</p>
         </section>
     </div>
     <div>
         <section class="cat">
-            <p>Ecco un gattino</p>
+            <p>Una tavola di Sandman: ti serve altro per iniziare a leggerlo?</p>
             <br>
-            <img src="Photo_of_a_kitten.jpg" alt="Gattino">
+            <img src="Sandman_Overture.jpg" alt="Sandman">
         </section>
         <section class="blackcat">
-            <p>Ecco un gatto nero</p>
-            <img src="OIP.jpeg" alt="Gatto nero">
+            <p>Copertina di Identity Crisis</p>
+            <img src="NOV150278.jpg" alt="Identity Crisis">
         </section>
     </div>
+
+    <form>
+
+        <h3>Quale di queste opere vorresti approfondire?</h3>
+        <input type="radio" id="Sandman" value="Sandman" name="scelta">
+        <label for="Sandman">Sandman</label>
+        <input type="radio" id="IdentityCrisis" value="IdentityCrisis" name="scelta">
+        <label for="IdentityCrisis">Identity Crisis</label>
+        <input type="radio" id="BNW" value="BNW" name="scelta">
+        <label for="BNW">Brave New World</label>
+
+        <hr>
+
+        <h3>Interessi:</h3> <br>
+        <input type="checkbox" name="interessi" id="fantasy">
+        <label for="fantasy"> Fantasy </label> <br>
+        <input type="checkbox" name="interessi" id="giallo">
+        <label for="giallo"> Giallo/Thriller </label> <br>
+        <input type="checkbox" name="interessi" id="fantascienza">
+        <label for="fantascienza"> fantascienza </label>
+        <hr>
+
+        <button type="submit">Invia</button>
+        <button type="reset">Pulisci</button>
+
+    </form>
 </body>
 
 </html>
