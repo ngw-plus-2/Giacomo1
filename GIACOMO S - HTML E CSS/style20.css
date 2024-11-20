@@ -30,7 +30,7 @@ h1 {
 
 .cronaca {
     margin: 10px;
-    border: 4px solid rgb(95, 88, 88);
+    border: 4px dotted rgb(95, 88, 88);
     border-radius: 5px;
 }
 
@@ -43,7 +43,7 @@ img {
     margin: 10px;
 }
 
-.cat p{
+.cat p {
     font-size: x-large;
     background-color: var(--main-color);
     display: inline;
@@ -53,3 +53,36 @@ div th:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: chocolate;
 }
+
+.bottoniflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottoniflex button {
+    margin: 15px;
+    background-color: var(--main-color);
+    width: fit-content;
+}
+
+.bottoniflex button:focus {
+    background-color: gold;
+}
+
+.smartphone {
+    align-text: center;
+    background-color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+    .bottoniflex {
+        margin-top: 50px;
+    }
+    .smartphone {
+        display: none;
+    }
+}
+
+
+
