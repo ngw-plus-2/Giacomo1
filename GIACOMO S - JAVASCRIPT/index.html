@@ -1,21 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header></header>
     <main></main>
     <footer></footer>
     <script>
-     console.log("Hello World");
-     const nome = "Giacomo"
-     let cognome = "Sperandeo"
-     let eta = 30;
-     console.log(nome + " " + cognome);
+
+        console.log("Hello World");
+        const nome = "Giacomo"
+        let cognome = "Sperandeo"
+        let eta = 30;
+        console.log(nome + " " + cognome);
+
+        let clienti = {
+            nome: "Giacomo",
+            cognome: "Sperandeo",
+            eta: 30,
+            isVivo: true
+        }
+
+        let stringaTre = "abcdef"
+        console.log(stringaTre.length);
+        console.log(stringaTre.toUpperCase());
+
+        if (b == 10) {
+            console.log("b è 10");
+        }
+        if (b === 10) {
+            console.log("b è 10 NUMERICO");
+        }
+
+        if (null == undefined) {
+            console.log("prova");
+        }
+        if (null === undefined) {
+            console.log("222");
+        }
+
+
+        let z = 5;
+        let x = 4;
+        if (z > 4 && x < 5) {
+            console.log("AND");
+        }
+
+
+
+        if ((z > 4) ^ (x < 1)) {
+            console.log("XOR");
+        }
+
+
+        let isEmpty = false;
+        if (!isEmpty) {
+            console.log("NOT");
+        }
+
+
+        let operazione = "ciao";
+        switch (operazione) {
+            case "+":
+                console.log("piu");
+                break;
+            case "-":
+                console.log("meno");
+                break;
+            case "*":
+                console.log("per");
+                break;
+            case "/":
+                console.log("diviso");
+                break;
+            default:
+                console.log("errore");
+                break;
+        }
 
     </script>
 </body>
+
 </html>
