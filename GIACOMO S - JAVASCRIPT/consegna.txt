@@ -1,0 +1,5 @@
+CREARE UNA LISTA DELLA SPESA : Eseguire un "while in loop" per avviare in console uno script 
+che chieda in ingresso che cosa aggiungere alla lista della spesa, stampare in console la lista
+e poi alert con scritto "Prodotto aggiunto alla lista". Dopo l'ok il prompt richiede se si 
+vogliono aggiungere altri prodotti con la risposta "SI", e continua fino a quando non
+si inserisce un "NO" o "ESCI", in quel caso si stampa la lista e si esce.

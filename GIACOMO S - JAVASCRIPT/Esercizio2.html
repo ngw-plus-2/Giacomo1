@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script>
+
+        let spesa = [];
+        let continua = true;
+        while (continua) {
+            let scelta = prompt("Aggiungi un prodotto")
+
+            let prodotto = prompt("Aggiungi un prodotto dalla tua lista.");
+            if (prodotto) {
+                spesa.push(prodotto);
+                console.log("Lista della spesa:", spesa);
+                alert("Prodotto aggiunto alla lista");
+                let risposta = prompt("Vuoi aggiungere altri prodotti? Rispondi 'SI' per continuare, 'NO' o 'ESCI' per terminare.");
+                if (risposta.toUpperCase() === "NO" || risposta.toUpperCase() === "ESCI") {
+                    continua = false;
+                }
+            } else {
+                continua = false;
+            }
+        }
+        console.log("La tua spesa:", spesa);
+
+    </script>
+</body>
+
+</html>
