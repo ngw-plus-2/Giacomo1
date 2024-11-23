@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script src="utility3.js"></script>
+    <script>
+        let spesa = {};
+        let continua = true;
+        while (continua) {
+            let operazione = prompt("Digita ADD per aggiungere. DEL per eliminare. STAMP per visualizzare. ESC per uscire")
+            switch (operazione) {
+                case "ADD": aggiungi();
+                break
+                case "DEL": canc();
+                break
+                case "STAMP": console.log(spesa);
+                break
+                case "ESC": continua = false;
+                break
+                default: console.log("Inserire un comando tra quelli indicati")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

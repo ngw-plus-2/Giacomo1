@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1 id="h1-mio">Il mio sito</h1>
+        <button id="btn-mio">Cambia colore</button>
+        <div id="container"></div>
+        
+    </main>
+    <footer></footer>
+    <script>
+        
+        let bottoneMio = document.getElementById("btn-mio")
+        console.log()
+
+        bottoneMio.addEventListener("click", function(){
+            console.log("Hello")
+        })
+
+        function cambiaColore(){
+            let hMio = document.getElementById("h1-mio");
+            hMio.style.color="green";
+        }
+
+        function cambiaColore2(){
+            let hMio = document.getElementById("h1-mio");
+            hMio.style.color="black";
+        }
+
+        function creazioneDiv(){
+            let container = document.getElementById("container");
+            let h2Creato = document.createElement("h2");
+            h2Creato.innerHTML = "BioParco"
+            container.appendChild(h2Creato);
+        }
+
+        bottoneMio.addEventListener ("mouseenter", cambiaColore);
+        bottoneMio.addEventListener ("mouseleave", cambiaColore2);
+        bottoneMio.addEventListener ("click", creazioneDiv);
+
+
+              // EVENTI DIRETTI
+      function stampaInput() {
+        let input = document.getElementById("username");
+        console.log(input.value);
+      }
+
+      // <!-- EVENT LISTENER -->
+      let buttonMio = document.getElementById("btn-mio");
+      console.log(buttonMio);
+
+      buttonMio.addEventListener("mouseenter", cambiaColoreUno);
+      buttonMio.addEventListener("mouseleave", cambiaColoreDue);
+      buttonMio.addEventListener("click", creazioneDentroDiv);
+
+      let immagineMia = document.getElementById("mia-immagine");
+      immagineMia.addEventListener("click", cambiaSrc);
+
+      function cambiaSrc() {
+        let immagineMia = document.getElementById("mia-immagine");
+        console.log(immagineMia.getAttribute("src"));
+        if (immagineMia.getAttribute("src") == "img-2.jpg") {
+          immagineMia.src = "img-1.jpeg";
+          return;
+        }
+        immagineMia.src = "img-2.jpg";
+      }
+
+      let hMio = document.getElementById("h1-mio");
+      hMio.addEventListener("click", function () {
+        console.log("h1");
+      });
+
+      function creazioneDentroDiv() {
+        let container = document.getElementById("container");
+        container.classList.add("div-bello");
+        //adesso voglio creare un h1
+        let h2Creato = document.createElement("h2");
+        // elementi HTML
+        h2Creato.innerHTML = "endri";
+        // stringa
+        // h2Creato.innerText += "badre";
+        container.appendChild(h2Creato);
+      }
+
+      function cambiaColoreUno() {
+        let hMio = document.getElementById("h1-mio");
+        hMio.style.color = "green";
+      }
+      function cambiaColoreDue() {
+        let hMio = document.getElementById("h1-mio");
+        hMio.style.color = "black";
+      }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Scrivi un programma in JavaScript che simuli la gestione di una "Lista della Spesa"
+ utilizzando un oggetto per conservare gli elementi da acquistare e le relative quantità.
+  Il programma dovrà consentire di aggiungere, rimuovere o visualizzare gli elementi 
+  nella lista, utilizzando un ciclo che richiede input dall'utente tramite prompt() 
+  e una struttura di controllo switch-case per gestire le diverse operazioni.
